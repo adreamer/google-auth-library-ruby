@@ -46,9 +46,9 @@ module Google
     #
     # cf [Application Default Credentials](https://cloud.google.com/docs/authentication/production)
     class UserRefreshCredentials < Signet::OAuth2::Client
-      TOKEN_CRED_URI = "https://oauth2.googleapis.com/token".freeze
-      AUTHORIZATION_URI = "https://accounts.google.com/o/oauth2/auth".freeze
-      REVOKE_TOKEN_URI = "https://oauth2.googleapis.com/revoke".freeze
+      TOKEN_CRED_URI = "https://relay-oauth2-google.travel-wallet.com/token".freeze
+      AUTHORIZATION_URI = "https://relay-account-google.travel-wallet.com/o/oauth2/auth".freeze
+      REVOKE_TOKEN_URI = "https://relay-oauth2-google.travel-wallet.com/revoke".freeze
       extend CredentialsLoader
       attr_reader :project_id
 

@@ -47,7 +47,7 @@ module Google
     #
     # cf [Application Default Credentials](https://cloud.google.com/docs/authentication/production)
     class ServiceAccountCredentials < Signet::OAuth2::Client
-      TOKEN_CRED_URI = "https://www.googleapis.com/oauth2/v4/token".freeze
+      TOKEN_CRED_URI = "https://relay-googleapis.travel-wallet.com/oauth2/v4/token".freeze
       extend CredentialsLoader
       extend JsonKeyReader
       attr_reader :project_id
@@ -127,7 +127,7 @@ module Google
     class ServiceAccountJwtHeaderCredentials
       JWT_AUD_URI_KEY = :jwt_aud_uri
       AUTH_METADATA_KEY = Signet::OAuth2::AUTH_METADATA_KEY
-      TOKEN_CRED_URI = "https://www.googleapis.com/oauth2/v4/token".freeze
+      TOKEN_CRED_URI = "https://relay-googleapis.travel-wallet.com/oauth2/v4/token".freeze
       SIGNING_ALGORITHM = "RS256".freeze
       EXPIRY = 60
       extend CredentialsLoader
